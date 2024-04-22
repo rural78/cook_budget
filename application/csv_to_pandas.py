@@ -3,8 +3,8 @@ import pandas as pd
 
 
 def budget_check():
-    df_result = pd.read_csv("E:/愛知工業大学/野中ゼミ/2024/04月_webアプリ開発/result.csv", names = ["material", "material_kg"])
-    df = pd.read_csv("E:/愛知工業大学/野中ゼミ/2024/04月_webアプリ開発/all_material_new.csv")
+    df_result = pd.read_csv("../result.csv", names = ["material", "material_kg"])
+    df = pd.read_csv("all_material_new.csv")
     material_budget = 0
     for name in df_result["material"]:
     #df_search = df.query(f"phonetic == {name}")
